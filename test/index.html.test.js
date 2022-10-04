@@ -4,7 +4,7 @@ const { expect } = chai;
 
 describe("index.html", () => {
   describe("the title-box section", () => {
-    it("has a <h4> element with the correct content", () => {
+    it("has a <h1> element with the correct content", () => {
       // find the element with an ID of title-box
       const titleBox = document.querySelector("#title-box");
 
@@ -12,7 +12,7 @@ describe("index.html", () => {
       const hint1 = "No <h4> tag(s) found";
       expect(h4, hint1).to.exist;
 
-      const hint2 = "Your <h4> tag should contain the text 'PHARRELL WILLIAMS'";
+      const hint2 = "Your <h1> tag should contain the text 'PHARRELL WILLIAMS'";
       expect(h4, hint2).to.contain.text("PHARRELL WILLIAMS");
     });
 
